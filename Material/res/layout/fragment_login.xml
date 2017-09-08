@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/danny_background_light" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_login_user" />
+
+            <EditText
+                android:id="@+id/user"
+                style="@style/Login_EditText"
+                android:hint="@string/login_user"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/danny_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_login_psw" />
+
+            <EditText
+                android:id="@+id/psw"
+                style="@style/Login_EditText"
+                android:hint="@string/login_psw"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/danny_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_login_captcha" />
+
+            <EditText
+                android:id="@+id/captcha"
+                style="@style/Login_EditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/login_captcha"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+            <ImageView
+                android:id="@+id/captcha_view"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/danny_background" />
+
+            <View
+                android:layout_width="110dp"
+                android:layout_height="2dp" />
+        </LinearLayout>
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:cpb_colorIndicator="@color/danny_background"
+            app:cpb_colorIndicatorBackground="@color/danny_grey"
+            app:cpb_colorProgress="@color/danny_background_light"
+            app:cpb_cornerRadius="2dp"
+            app:cpb_iconComplete="@drawable/ic_login_accept"
+            app:cpb_iconError="@drawable/ic_login_cancel"
+            app:cpb_selectorComplete="@drawable/complete_state_selector"
+            app:cpb_selectorError="@drawable/error_state_selector"
+            app:cpb_selectorIdle="@drawable/idle_state_selector"
+            app:cpb_textIdle="@string/menu_user" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/login_tip"
+            android:textColor="#ff0000" />
+    </LinearLayout>
+
+</RelativeLayout>

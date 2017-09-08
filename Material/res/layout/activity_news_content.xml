@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.sparke.util.RevealBackgroundView
+        android:id="@+id/revealBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/news_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/danny_background_light" >
+
+        <TextView
+            android:id="@+id/news_content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/danny_background"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:padding="16dp"
+            android:textColor="@color/danny_white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/news_content_back"
+            android:layout_below="@id/news_content_title"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/news_content_progress_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.rey.material.widget.ProgressView
+                    android:id="@+id/news_content_progress"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:cpd_inAnimDuration="800"
+                    app:cpd_outAnimDuration="400"
+                    app:pv_autostart="false"
+                    app:pv_circular="true"
+                    app:pv_progressMode="indeterminate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/loading_text2"
+                    android:textColor="@color/danny_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/news_content_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.gc.materialdesign.views.ButtonFlat
+                    android:id="@+id/news_content_btn_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/danny_background"
+                    android:text="@string/loading_result_text" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/news_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/news_content_back"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/danny_background"
+            android:src="@drawable/ic_camera_back" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="C:/Android/android-sdk-windows/extras/android/support/v4/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Android/android-sdk-windows/extras/android/support/v7/appcompat/libs/android-support-v7-appcompat.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Android/android-sdk-windows/extras/android/support/v7/cardview/libs/android-support-v7-cardview.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Android/android-sdk-windows/extras/android/support/v7/recyclerview/libs/android-support-v7-recyclerview.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Android/example/BarCodeTest/libs/zxing.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jsoup-1.8.2.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

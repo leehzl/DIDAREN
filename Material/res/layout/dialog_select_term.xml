@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="学年"
+            android:textColor="@color/second_text_color"
+            android:textSize="18sp" />
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/school_score_year"
+            style="@style/Material.Widget.Spinner.Light"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="4"
+            android:minWidth="184dp"
+            app:rd_delayClick="none"
+            app:rd_enable="true"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave.Light"
+            app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+            app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+            app:spn_arrowSize="4dp"
+            app:spn_arrowSwitchMode="true"
+            app:spn_dividerHeight="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="学期"
+            android:textColor="@color/second_text_color"
+            android:textSize="18sp" />
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/school_score_term"
+            style="@style/Material.Widget.Spinner.Light"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="4"
+            android:minWidth="184dp"
+            app:rd_delayClick="none"
+            app:rd_enable="true"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave.Light"
+            app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+            app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+            app:spn_arrowSize="4dp"
+            app:spn_arrowSwitchMode="true"
+            app:spn_dividerHeight="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

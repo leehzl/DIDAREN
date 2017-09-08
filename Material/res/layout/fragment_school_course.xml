@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/danny_background_light"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/danny_background" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/danny_background" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="周一"
+            android:textColor="@color/danny_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="周二"
+            android:textColor="@color/danny_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="周三"
+            android:textColor="@color/danny_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="周四"
+            android:textColor="@color/danny_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="周五"
+            android:textColor="@color/danny_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="周六"
+            android:textColor="@color/danny_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="周日"
+            android:textColor="@color/danny_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/danny_background_light"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/danny_background_light"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="1\n2\n节"
+                    android:textStyle="bold"
+                    android:textColor="@color/danny_background"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_course_morning_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/danny_background_light"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="3\n4\n节"
+                    android:textStyle="bold"
+                    android:textColor="@color/danny_background"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_course_morning_second"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/danny_background_light"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="5\n6\n节"
+                    android:textStyle="bold"
+                    android:textColor="@color/danny_background"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_course_afternoon_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/danny_background_light"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="7\n8\n节"
+                    android:textStyle="bold"
+                    android:textColor="@color/danny_background"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_course_afternoon_second"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/danny_background_light"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="9\n10\n节"
+                    android:textStyle="bold"
+                    android:textColor="@color/danny_background"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_course_evening_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/danny_background_light"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="11\n12\n节"
+                    android:textStyle="bold"
+                    android:textColor="@color/danny_background"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_course_evening_second"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

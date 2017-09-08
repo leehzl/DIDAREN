@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="app_name">地大人</string>
+    <string name="menu_user">登录</string>
+    
+    
+    <string name="menu_electric">电量查询</string>
+    <string name="electric_area">校区</string>
+    <string name="electric_building">楼栋</string>
+    <string name="electric_dormitory">宿舍号</string>
+    <string name="electric_query">查询</string>
+    <string name="electric_dormitory_hint">输入宿舍号</string>
+    <string name="electric_wraming">注:支撑天数由近5天平均用电量计算,仅供参考！</string>
+    
+    <string name="menu_news">学工信息</string>
+    <string name="news_hot">热点关注</string>
+    <string name="news_notice">通知公告</string>
+    <string name="news_important">学工要闻</string>
+    
+    <string name="qr_code">二维码签到</string>
+    
+    <string name="school">我要当学霸</string>
+    <string name="school_course">个人课表</string>
+    <string name="school_exam">成绩查询</string>
+    <string name="school_time">考试时间</string>
+    <string name="school_time_event">待办事项</string>
+    <string name="school_time_event_hint">输入待办事项</string>
+    <string name="school_time_title">考试名称</string>
+    <string name="school_time_title_hint">输入考试名称</string>
+    <string name="school_time_start">考试开始</string>
+    <string name="school_time_start_hint">选择考试开始时间</string>
+    <string name="school_time_event_start">时间</string>
+    <string name="school_time_event_start_hint">选择时间</string>
+    <string name="school_time_end">考试结束</string>
+    <string name="school_time_end_hint">选择考试结束时间</string>
+    <string name="school_time_pos">考试地点</string>
+    <string name="school_time_pos_hint">输入考试地点</string>
+    <string name="school_time_event_pos">地点</string>
+    <string name="school_time_event_pos_hint">输入地点</string>
+    <string name="school_time_seat">座位号</string>
+    <string name="school_time_seat_hint">输入座位号</string>
+    <string name="school_time_note">备注</string>
+    <string name="school_time_note_hint">输入备注</string>
+    <string name="school_time_delete1">删除考试</string>
+    <string name="school_time_delete2">删除待办事项</string>
+    <string name="school_time_item1">还剩</string>
+    <string name="school_time_item2">天</string>
+    
+    <string name="activity">活动预告</string>
+    
+    <string name="setting">设置</string>
+    
+    <string name="exit">退出</string>
+    
+    <string name="done">完成</string>
+    
+    
+    <string name="login_user">用户名</string>
+    <string name="login_psw">密码</string>
+    <string name="login_captcha">验证码</string>
+    <string name="login_tip">无需注册，只需使用地大办公网的账号即可登录:-D</string>
+    <string name="personnal_per">个人信息</string>
+    <string name="loading_text">加载中…</string>
+    <string name="loading_text2">正在努力加载中…</string>
+    <string name="loading_text3">正在拼命获取数据中…</string>
+    <string name="loading_result_text">加载失败，点击重试</string>
+    
+    
+    
+    <drawable name="button_normal">@color/danny_background</drawable>
+    <drawable name="button_pressed">@color/danny_background_dark</drawable>
+    
+    <drawable name="modify_btn_pressed">@color/danny_background_200</drawable>
+    
+    <drawable name="expand_button_normal">@color/danny_background_dark</drawable>
+    <drawable name="expand_button_pressed">@color/danny_background_light</drawable>
+
+</resources>

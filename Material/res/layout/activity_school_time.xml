@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/danny_background" >
+
+        <TextView
+            android:id="@+id/modify_school_time_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/danny_white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/modify_school_time_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/done"
+            android:textColor="@color/danny_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/danny_background_light"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/modify_school_time_title_tip"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/danny_background"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/modify_school_time_title"
+                    style="@style/Login_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:maxLines="2"
+                    android:textColorHint="@color/danny_background_200"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/modify_school_time_start_tip"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_school_item_time"
+                    android:drawablePadding="4dp"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/modify_school_time_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/modify_btn_selector"
+                    android:textColor="@color/second_text_color"
+                    android:textColorHint="@color/third_text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/modify_school_time_end_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/modify_school_time_end_tip"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_school_end"
+                    android:drawablePadding="4dp"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/modify_school_time_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/modify_btn_selector"
+                    android:textColor="@color/second_text_color"
+                    android:textColorHint="@color/third_text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/modify_school_time_pos_tip"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_school_item_pos"
+                    android:drawablePadding="4dp"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/modify_school_time_pos"
+                    style="@style/Modify_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:maxLines="2"
+                    android:textColorHint="@color/third_text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/modify_school_time_seat_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/modify_school_time_seat_tip"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_school_item_seat"
+                    android:drawablePadding="4dp"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/modify_school_time_seat"
+                    style="@style/Modify_EditText"
+                    android:layout_marginLeft="16dp"
+                    android:inputType="number"
+                    android:textColorHint="@color/third_text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_school_item_note"
+                    android:drawablePadding="4dp"
+                    android:text="@string/school_time_note"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/modify_school_time_note"
+                    style="@style/Modify_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/school_time_note_hint"
+                    android:maxLines="6"
+                    android:textColorHint="@color/third_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/modify_school_time_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/deadline_color"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false" >
+
+        <FrameLayout
+            android:id="@+id/modify_school_time_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/delete_btn_selector" >
+
+            <TextView
+                android:id="@+id/modify_school_time_delete_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:textColor="@color/danny_white"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_MenuItem"
+    android:gravity="center" >
+
+    <TextView
+        style="@style/TextView_MenuItem"
+        android:drawableLeft="@drawable/ic_school"
+        android:text="@string/school" />
+
+</LinearLayout>

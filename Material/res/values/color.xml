@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="danny_background">#009688</color>
+    <color name="danny_background_dark">#00796b</color>
+    <color name="danny_background_light">#e0f2f1</color>
+    <color name="danny_background_200">#80cbc4</color>
+    <color name="danny_grey">#ffdedede</color>
+    <color name="danny_white">#ffffff</color>
+    <color name="danny_black">#000000</color>
+    <color name="text_color">#004d40</color>
+    <color name="content_text_color">#424242</color>
+    <color name="second_text_color">#757575</color>
+    <color name="toast_color">#bb424242</color>
+    <color name="third_text_color">#9e9e9e</color>
+    <color name="error_color">#ff0000</color>
+    <color name="deadline_color">#e84e40</color>
+    <color name="deadline_color_dark">#d01716</color>
+    <color name="light_gray">#bdbdbd</color>
+    <color name="gray">#9e9e9e</color>
+    
+
+</resources>

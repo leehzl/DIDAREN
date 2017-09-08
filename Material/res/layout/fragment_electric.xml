@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/danny_background_light"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/layout_up_roundrect" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/ic_electric2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/menu_electric"
+                    android:textColor="@color/danny_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/electric_area"
+                    android:textColor="@color/danny_background_dark"
+                    android:textSize="18sp" />
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/electric_area_spinner"
+                    style="@style/Material.Widget.Spinner.Light"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="4"
+                    android:minWidth="184dp"
+                    app:rd_delayClick="none"
+                    app:rd_enable="true"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave.Light"
+                    app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+                    app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+                    app:spn_arrowSize="4dp"
+                    app:spn_arrowSwitchMode="true"
+                    app:spn_dividerHeight="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/electric_building"
+                    android:textColor="@color/danny_background_dark"
+                    android:textSize="18sp" />
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/bui_spinner"
+                    style="@style/Material.Widget.Spinner.Light"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="4"
+                    android:minWidth="184dp"
+                    app:rd_delayClick="none"
+                    app:rd_enable="true"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave.Light"
+                    app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+                    app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+                    app:spn_arrowSize="4dp"
+                    app:spn_arrowSwitchMode="true"
+                    app:spn_dividerHeight="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/electric_dormitory"
+                    android:textColor="@color/danny_background_dark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/room_editText"
+                    style="@style/Modify_EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="4"
+                    android:hint="@string/electric_dormitory_hint"
+                    android:inputType="number"
+                    android:paddingLeft="16dp"
+                    android:textColorHint="@color/third_text_color" />
+            </LinearLayout>
+
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/query_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:cpb_colorIndicator="@color/danny_background"
+                app:cpb_colorIndicatorBackground="@color/danny_grey"
+                app:cpb_colorProgress="@color/danny_background_light"
+                app:cpb_cornerRadius="4dp"
+                app:cpb_iconComplete="@drawable/ic_login_accept"
+                app:cpb_iconError="@drawable/ic_login_cancel"
+                app:cpb_selectorComplete="@drawable/complete_state_selector"
+                app:cpb_selectorError="@drawable/error_state_selector"
+                app:cpb_selectorIdle="@drawable/idle_state_selector"
+                app:cpb_textIdle="@string/electric_query" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/remain_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/danny_background_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/moredays_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/danny_background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/warm_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/electric_wraming"
+        android:textColor="@color/deadline_color"
+        android:visibility="gone" />
+
+</LinearLayout>
